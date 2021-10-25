@@ -1,15 +1,16 @@
 import mysql.connector
 
-db = mysql.connector.connect(user='root', password='Berhed=1_2_3',
+db = mysql.connector.connect(user='root', password=' ', #the password I used matched my local instance of MySQL, which may be different for each person
                              host='localhost', database='teacherdb')
 mycursor = db.cursor()
 
 
-# Below is a list of initial table and column setups that I used to start the project mycursor.execute('CREATE TABLE
-# teacher (teacherID int NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(120));') mycursor.execute('ALTER TABLE
-# teacher ADD COLUMN overall DECIMAL(9,1)') mycursor.execute('CREATE TABLE comments (commentID int NOT NULL PRIMARY
-# KEY, comment TEXT);') mycursor.execute('CREATE TABLE ratings (ratingID int NOT NULL PRIMARY KEY, rating DECIMAL(9,
-# 1))') mycursor.execute('CREATE TABLE schools (teacherID int NOT NULL PRIMARY KEY, school_name VARCHAR(50));')
+# Below is a list of initial table and column setups that I used to start the project 
+# mycursor.execute('CREATE TABLE teacher (teacherID int NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(120));') 
+# mycursor.execute('ALTER TABLE teacher ADD COLUMN overall DECIMAL(9,1)') 
+# mycursor.execute('CREATE TABLE comments (commentID int NOT NULL PRIMARY KEY, comment TEXT);') 
+# mycursor.execute('CREATE TABLE ratings (ratingID int NOT NULL PRIMARY KEY, rating DECIMAL(9,1))') 
+# mycursor.execute('CREATE TABLE schools (teacherID int NOT NULL PRIMARY KEY, school_name VARCHAR(50));')
 # mycursor.execute('ALTER TABLE comments ADD COLUMN date_added VARCHAR(50);')
 # While testing the project and for an initial set of information, I manually added teachers and all of their relevant
 # information into my SQL tables
